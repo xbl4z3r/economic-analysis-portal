@@ -113,7 +113,7 @@ export default function PoliticiPage() {
   return (
     <div className="flex flex-col">
       {/* Header Section */}
-      <section className="border-b border-slate-200 bg-gradient-to-br from-emerald-50 via-slate-50 to-white py-16 dark:border-slate-800 dark:from-emerald-950/30 dark:via-slate-950 dark:to-slate-950">
+      <section className="border-b border-slate-200 bg-gradient-to-br from-emerald-50/70 via-slate-50 to-white py-16 dark:border-slate-800 dark:from-emerald-950/30 dark:via-slate-950 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4 animate-fade-in">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 shadow-sm dark:bg-emerald-950">
@@ -123,10 +123,10 @@ export default function PoliticiPage() {
               Măsuri de Stabilizare
             </span>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-5xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             Politici Guvernamentale
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Măsurile propuse de guvern pentru echilibrarea bugetului și stabilizarea
             economiei în fața presiunilor inflaționiste.
           </p>
@@ -134,9 +134,9 @@ export default function PoliticiPage() {
       </section>
 
       {/* Introduction */}
-      <section className="py-12 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-12 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Card className="border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-white shadow-lg shadow-emerald-100/50 transition-all duration-300 hover:shadow-xl dark:border-emerald-800 dark:from-emerald-950/50 dark:to-slate-950 dark:shadow-none">
+          <Card className="border-2 border-emerald-200/70 bg-gradient-to-br from-emerald-50/50 to-white shadow-sm transition-all duration-300 hover:shadow-lg dark:border-emerald-800 dark:from-emerald-950/50 dark:to-slate-950 dark:shadow-none">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
                 <Scale className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
@@ -144,7 +144,7 @@ export default function PoliticiPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg leading-relaxed text-card-foreground">
+              <p className="text-lg leading-relaxed text-slate-700 dark:text-card-foreground">
                 Pentru a contracara dezechilibrul inflaționist și a preveni alunecarea
                 în recesiune, guvernul a propus un pachet de măsuri de austeritate.
                 Acestea vizează atât creșterea veniturilor la buget prin majorări de
@@ -157,23 +157,23 @@ export default function PoliticiPage() {
       </section>
 
       {/* TVA Changes Section */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <Percent className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-              <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-foreground">
                 Creșterea TVA
               </h2>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-slate-600 dark:text-muted-foreground">
               Taxa pe valoarea adăugată va fi majorată atât pentru cota standard,
               cât și pentru cea redusă
             </p>
           </div>
 
           {/* TVA Table */}
-          <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg shadow-slate-200/50 transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-900 dark:shadow-none">
+          <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:shadow-none">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800/50">
@@ -225,16 +225,16 @@ export default function PoliticiPage() {
       </section>
 
       {/* Tax Increases Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white dark:bg-transparent">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <Receipt className="h-6 w-6 text-purple-600 dark:text-purple-400" />
-              <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-foreground">
                 Majorări de Impozite
               </h2>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-slate-600 dark:text-muted-foreground">
               Impozitele vor crește în multiple domenii pentru a genera venituri
               suplimentare la buget
             </p>
@@ -242,7 +242,7 @@ export default function PoliticiPage() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {taxIncreases.map((tax, index) => (
-              <Card key={index} className="group border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-700 dark:bg-slate-900">
+              <Card key={index} className="group border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900">
                 <CardHeader>
                   <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-100 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-md dark:bg-purple-950">
                     <tax.icon className="h-6 w-6 text-purple-600 dark:text-purple-400" />
@@ -264,16 +264,16 @@ export default function PoliticiPage() {
       </section>
 
       {/* Excise Section */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <Fuel className="h-6 w-6 text-amber-600 dark:text-amber-400" />
-              <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-foreground">
                 Majorări de Accize
               </h2>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-slate-600 dark:text-muted-foreground">
               Accizele la tutun și combustibil vor crește cu 10%
             </p>
           </div>
@@ -314,16 +314,16 @@ export default function PoliticiPage() {
       </section>
 
       {/* Budget Sector Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <Wallet className="h-6 w-6 text-slate-600 dark:text-slate-400" />
-              <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-foreground">
                 Sectorul Bugetar
               </h2>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-slate-600 dark:text-muted-foreground">
               Măsuri de reducere a cheltuielilor în sectorul public
             </p>
           </div>
@@ -332,7 +332,7 @@ export default function PoliticiPage() {
             {budgetaryMeasures.map((measure, index) => (
               <Card
                 key={index}
-                className="group border-2 border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-700 dark:bg-slate-900"
+                className="group border-2 border-slate-200/70 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900"
               >
                 <CardHeader>
                   <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-md dark:bg-slate-800">
@@ -352,16 +352,16 @@ export default function PoliticiPage() {
       </section>
 
       {/* Other Measures Section */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <Dices className="h-6 w-6 text-cyan-600 dark:text-cyan-400" />
-              <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-foreground">
                 Alte Măsuri
               </h2>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-slate-600 dark:text-muted-foreground">
               Suprataxare pentru activități specifice
             </p>
           </div>
@@ -370,7 +370,7 @@ export default function PoliticiPage() {
             {otherMeasures.map((measure, index) => (
               <Card
                 key={index}
-                className="group border-2 border-cyan-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-cyan-800 dark:bg-slate-900"
+                className="group border-2 border-cyan-200/70 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-cyan-800 dark:bg-slate-900"
               >
                 <CardHeader>
                   <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-md dark:bg-cyan-950">
@@ -390,18 +390,18 @@ export default function PoliticiPage() {
       </section>
 
       {/* Summary Table */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-3xl">
               Rezumat Măsuri Fiscale
             </h2>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-2 text-slate-600 dark:text-muted-foreground">
               Toate măsurile de stabilizare într-o privire de ansamblu
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg shadow-slate-200/50 transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-900 dark:shadow-none">
+          <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:shadow-none">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800/50">
@@ -478,13 +478,13 @@ export default function PoliticiPage() {
       </section>
 
       {/* Conclusion */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/50 transition-all duration-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
-            <h2 className="mb-4 text-2xl font-bold text-card-foreground">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-card-foreground">
               Concluzie
             </h2>
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-muted-foreground">
               Pachetul de măsuri fiscale propus de guvern urmărește să reducă
               dezechilibrul bugetar și să tempereze inflația. Cu toate acestea,
               aceste măsuri vor avea un impact semnificativ asupra populației,

@@ -150,7 +150,7 @@ export default function InflatiePage() {
   return (
     <div className="flex flex-col">
       {/* Header Section */}
-      <section className="border-b border-slate-200 bg-gradient-to-br from-blue-50 via-slate-50 to-white py-16 dark:border-slate-800 dark:from-blue-950/30 dark:via-slate-950 dark:to-slate-950">
+      <section className="border-b border-slate-200 bg-gradient-to-br from-blue-50/70 via-slate-50 to-white py-16 dark:border-slate-800 dark:from-blue-950/30 dark:via-slate-950 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4 animate-fade-in">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 shadow-sm dark:bg-blue-950">
@@ -160,10 +160,10 @@ export default function InflatiePage() {
               Rată: 9%
             </span>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-5xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             Inflația în România
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Inflația reprezintă dezechilibrul dintre masa monetară excedentară și volumul
             de bunuri deficitar, afectând puterea de cumpărare a populației.
           </p>
@@ -171,11 +171,11 @@ export default function InflatiePage() {
       </section>
 
       {/* Definition Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Definition Card */}
-            <Card className="border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white shadow-lg shadow-blue-100/50 transition-all duration-300 hover:shadow-xl dark:border-blue-800 dark:from-blue-950/50 dark:to-slate-950 dark:shadow-none">
+            <Card className="border-2 border-blue-200/70 bg-gradient-to-br from-blue-50/50 to-white shadow-sm transition-all duration-300 hover:shadow-lg dark:border-blue-800 dark:from-blue-950/50 dark:to-slate-950 dark:shadow-none">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl">
                   <AlertCircle className="h-6 w-6 text-blue-600 dark:text-blue-400" />
@@ -183,7 +183,7 @@ export default function InflatiePage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg leading-relaxed text-card-foreground">
+                <p className="text-lg leading-relaxed text-slate-700 dark:text-card-foreground">
                   <strong className="text-blue-600 dark:text-blue-400">Inflația</strong> este
                   dezechilibrul dintre <em>masa monetară excedentară</em> și <em>volumul de
                   bunuri deficitar</em>. Aceasta se manifestă prin creșterea generalizată
@@ -194,7 +194,7 @@ export default function InflatiePage() {
             </Card>
 
             {/* EU Context Card */}
-            <Card className="border-2 border-slate-200 shadow-lg shadow-slate-100/50 transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:shadow-none">
+            <Card className="border-2 border-slate-200/70 shadow-sm transition-all duration-300 hover:shadow-lg dark:border-slate-700 dark:shadow-none">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl">
                   <Globe className="h-6 w-6 text-slate-600 dark:text-slate-400" />
@@ -249,7 +249,7 @@ export default function InflatiePage() {
 
           {/* Inflationary Spiral Diagram */}
           <div className="mt-12">
-            <Card className="border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-white dark:border-orange-800 dark:from-orange-950/30 dark:to-slate-950">
+            <Card className="border-2 border-orange-200/70 bg-gradient-to-br from-orange-50/50 to-white dark:border-orange-800 dark:from-orange-950/30 dark:to-slate-950">
               <CardHeader className="text-center">
                 <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                   <RefreshCw className="h-6 w-6 text-orange-600 dark:text-orange-400" />
@@ -406,17 +406,17 @@ export default function InflatiePage() {
       </section>
 
       {/* Causes Section */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 shadow-sm dark:bg-blue-950 dark:text-blue-300">
               <BarChart3 className="h-4 w-4" />
               Rata de 9%
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-4xl">
               Cauzele Inflației în România
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground">
               Rata inflației de 9% este rezultatul combinării mai multor factori
               economici și politici
             </p>
@@ -428,7 +428,7 @@ export default function InflatiePage() {
               return (
                 <Card
                   key={index}
-                  className={`group relative overflow-hidden border-2 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:bg-slate-900 ${colors.border}`}
+                  className={`group relative overflow-hidden border-2 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900 ${colors.border}`}
                 >
                   <div className="absolute right-0 top-0 h-32 w-32 -translate-y-8 translate-x-8 rounded-full bg-gradient-to-br from-current to-transparent opacity-5 transition-transform duration-300 group-hover:scale-150" />
                   <CardHeader>
@@ -452,13 +452,13 @@ export default function InflatiePage() {
       </section>
 
       {/* Summary Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/50 transition-all duration-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
-            <h2 className="mb-4 text-2xl font-bold text-card-foreground">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-card-foreground">
               Concluzie
             </h2>
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-muted-foreground">
               Inflația de 9% în România este rezultatul unui complex de factori
               interconectați: de la politici fiscale expansioniste și cheltuieli
               publice ineficiente, până la dezechilibre structurale în economie și

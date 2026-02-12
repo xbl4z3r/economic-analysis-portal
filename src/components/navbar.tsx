@@ -61,8 +61,8 @@ export function Navbar() {
                 className={cn(
                   "relative flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200",
                   isActive
-                    ? "bg-blue-50 text-blue-700 shadow-sm dark:bg-blue-950/50 dark:text-blue-300"
-                    : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-white"
+                    ? "bg-blue-100 text-blue-700 shadow-sm dark:bg-blue-950/50 dark:text-blue-300"
+                    : "text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-white"
                 )}
                 style={{ animationDelay: `${index * 50}ms` }}
               >
@@ -84,7 +84,7 @@ export function Navbar() {
           <ThemeToggle />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 transition-all duration-200 hover:bg-slate-100 hover:text-slate-900 active:scale-95 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white md:hidden"
+            className="inline-flex items-center justify-center rounded-lg p-2 text-slate-700 transition-all duration-200 hover:bg-slate-100 hover:text-slate-900 active:scale-95 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white md:hidden"
             aria-label={mobileMenuOpen ? "Închide meniul" : "Deschide meniul"}
           >
             <span className="relative h-5 w-5">
@@ -110,15 +110,15 @@ export function Navbar() {
           {navItems.map((item, index) => {
             const isActive = pathname === item.href
             return (
-              <Link
+                <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
                   "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200",
                   isActive
-                    ? "bg-blue-50 text-blue-700 dark:bg-blue-950/50 dark:text-blue-300"
-                    : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-white"
+                    ? "bg-blue-100 text-blue-700 dark:bg-blue-950/50 dark:text-blue-300"
+                    : "text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-white"
                 )}
                 style={{
                   transitionDelay: mobileMenuOpen ? `${index * 50}ms` : "0ms",

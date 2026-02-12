@@ -118,7 +118,7 @@ export default function RecesiunePage() {
   return (
     <div className="flex flex-col">
       {/* Header Section */}
-      <section className="border-b border-slate-200 bg-gradient-to-br from-red-50 via-slate-50 to-white py-16 dark:border-slate-800 dark:from-red-950/30 dark:via-slate-950 dark:to-slate-950">
+      <section className="border-b border-slate-200 bg-gradient-to-br from-red-50/70 via-slate-50 to-white py-16 dark:border-slate-800 dark:from-red-950/30 dark:via-slate-950 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4 animate-fade-in">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-100 shadow-sm dark:bg-red-950">
@@ -128,10 +128,10 @@ export default function RecesiunePage() {
               Risc Economic
             </span>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-5xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             Recesiunea Economică
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Înțelegeți ce înseamnă o recesiune, cum se ajunge la ea din dezechilibrul
             inflaționist și care sunt efectele sociale majore.
           </p>
@@ -139,9 +139,9 @@ export default function RecesiunePage() {
       </section>
 
       {/* Definition Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Card className="border-2 border-red-200 bg-gradient-to-br from-red-50 to-white shadow-lg shadow-red-100/50 transition-all duration-300 hover:shadow-xl dark:border-red-800 dark:from-red-950/50 dark:to-slate-950 dark:shadow-none">
+          <Card className="border-2 border-red-200/70 bg-gradient-to-br from-red-50/50 to-white shadow-sm transition-all duration-300 hover:shadow-lg dark:border-red-800 dark:from-red-950/50 dark:to-slate-950 dark:shadow-none">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
                 <AlertTriangle className="h-6 w-6 text-red-600 dark:text-red-400" />
@@ -149,14 +149,14 @@ export default function RecesiunePage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg leading-relaxed text-card-foreground">
+              <p className="text-lg leading-relaxed text-slate-700 dark:text-card-foreground">
                 <strong className="text-red-600 dark:text-red-400">Recesiunea</strong> reprezintă
                 o <em>scădere semnificativă a activității economice</em> pe o perioadă de cel
                 puțin <strong>2 trimestre consecutive</strong>. Aceasta se caracterizează prin
                 reducerea produsului intern brut (PIB), creșterea șomajului și scăderea
                 generalizată a consumului și investițiilor.
               </p>
-              <div className="mt-6 flex items-center gap-4 rounded-xl bg-red-100/50 p-4 dark:bg-red-950/50">
+              <div className="mt-6 flex items-center gap-4 rounded-xl bg-red-50 p-4 dark:bg-red-950/50">
                 <Clock className="h-10 w-10 text-red-500" />
                 <div>
                   <div className="font-semibold text-foreground">
@@ -173,13 +173,13 @@ export default function RecesiunePage() {
       </section>
 
       {/* Transition Section */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-4xl">
               De la Inflație la Recesiune
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground">
               Dezechilibrul inflaționist declanșează un lanț de evenimente care poate
               conduce la recesiune
             </p>
@@ -245,13 +245,13 @@ export default function RecesiunePage() {
       </section>
 
       {/* Social Effects Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 bg-gradient-to-b from-white to-slate-50/50 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-foreground sm:text-4xl">
               Efecte Sociale ale Recesiunii
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-muted-foreground">
               Recesiunea are consecințe profunde asupra societății și bunăstării
               cetățenilor
             </p>
@@ -307,13 +307,13 @@ export default function RecesiunePage() {
       </section>
 
       {/* Summary Section */}
-      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
+      <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50/50 to-white py-16 dark:border-slate-800 dark:from-slate-900/50 dark:to-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/50 transition-all duration-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
-            <h2 className="mb-4 text-2xl font-bold text-card-foreground">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-card-foreground">
               Concluzie
             </h2>
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-muted-foreground">
               Recesiunea reprezintă o amenințare reală pentru economia românească,
               având potențialul de a afecta profund viața de zi cu zi a cetățenilor.
               De la creșterea șomajului și dificultățile în obținerea creditelor,

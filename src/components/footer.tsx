@@ -16,7 +16,7 @@ export function Footer() {
                 Economia României
               </span>
             </Link>
-            <p className="max-w-sm text-center text-sm text-slate-600 dark:text-slate-400 md:text-left">
+            <p className="max-w-sm text-center text-sm text-slate-700 dark:text-slate-400 md:text-left">
               Portal de analiză economică dedicat înțelegerii fenomenelor de inflație și recesiune în context românesc și european.
             </p>
           </div>
@@ -25,19 +25,19 @@ export function Footer() {
           <div className="flex flex-wrap justify-center gap-6 text-sm md:justify-end">
             <Link
               href="/inflatie"
-              className="relative text-slate-600 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-slate-700 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               Inflație
             </Link>
             <Link
               href="/recesiune"
-              className="relative text-slate-600 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-slate-700 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               Recesiune
             </Link>
             <Link
               href="/politici"
-              className="relative text-slate-600 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-slate-700 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               Politici
             </Link>
@@ -46,8 +46,8 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 border-t border-slate-200 pt-8 dark:border-slate-800">
-          <p className="text-center text-sm text-slate-500">
-            © {new Date().getFullYear()} <a href={"https://github.com/xbl4z3r"} className="text-slate-600 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400">Christian Petroniu</a> - Analiza Economiei României. Toate drepturile rezervate.
+          <p className="text-center text-sm text-slate-600 dark:text-slate-500">
+            © {new Date().getFullYear()} <a href={"https://github.com/xbl4z3r"} className="text-slate-700 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400">Christian Petroniu</a> - Analiza Economiei României. Toate drepturile rezervate.
           </p>
         </div>
       </div>

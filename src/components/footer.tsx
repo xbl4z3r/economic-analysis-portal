@@ -44,13 +44,13 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright 
+        {/* Temp */}
         <div className="mt-8 border-t border-slate-200 pt-8 dark:border-slate-800">
           <p className="text-center text-sm text-slate-600 dark:text-slate-500">
-            © {new Date().getFullYear()} <a href={"https://github.com/xbl4z3r"} className="text-slate-700 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400">Christian Petroniu</a> - Analiza Economiei României. Toate drepturile rezervate.
+            © {new Date().getFullYear()} <a className="text-slate-700 transition-colors duration-200 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400">Radu Vînă</a> - Analiza Economiei României. Toate drepturile rezervate.
           </p>
         </div>
-        */}
+        
       </div>
     </footer>
   )

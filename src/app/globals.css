@@ -126,6 +126,8 @@ body {
 /* Smooth transitions for theme change */
 html {
   transition: background-color 0.3s ease, color 0.3s ease;
+  /* Slightly larger base font for improved readability */
+  font-size: 20px;
 }
 
 /* Animation Keyframes */
@@ -341,7 +343,8 @@ html {
 /* Responsive text sizing */
 @media (max-width: 640px) {
   html {
-    font-size: 15px;
+    /* Keep mobile a bit larger than default mobile sizing */
+    font-size: 17px;
   }
 }
 
